@@ -1,0 +1,2 @@
+2026-10-29T16:27:58.012Z [INFO] Native runtime logging initialized
+2026-10-30T11:49:25.328Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch PAT user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)

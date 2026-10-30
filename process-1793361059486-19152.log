@@ -1,0 +1,7 @@
+2026-10-30T11:50:59.504Z [INFO] Native runtime logging initialized
+2026-10-30T11:51:00.390Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch PAT user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
+2026-10-30T11:51:01.949Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch GitHub CLI user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
+2026-10-30T11:51:02.176Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch PAT user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
+2026-10-30T11:51:02.401Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch GitHub CLI user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
+2026-10-30T11:51:04.302Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch PAT user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
+2026-10-30T11:51:04.528Z [ERROR] [rust:copilot_runtime::auth::manager_orchestration] Failed to fetch GitHub CLI user login: network fetch failed: request failed: error sending request for url (https://api.github.com/copilot_internal/user)
