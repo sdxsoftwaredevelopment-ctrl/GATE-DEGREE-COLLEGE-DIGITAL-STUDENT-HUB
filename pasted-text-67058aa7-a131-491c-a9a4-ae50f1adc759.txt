@@ -1,0 +1,1201 @@
+GATE DEGREE COLLEGE DIGITAL STUDENT HUB
+
+COMPLETE MASTER AI CODING PROMPT
+
+Build a complete, modern, responsive, production-ready full-stack web application called:
+
+GATE Degree College Digital Student Hub
+
+For:
+
+GATE Degree College, Tirupati, Andhra Pradesh, India
+
+Official reference website:
+
+https://degree.gatetirupati.com/
+
+IMPORTANT:
+
+This is a student-focused digital hub and must NOT be presented as the official college website unless officially authorized by the college management.
+
+Use the official GATE Degree College website as the reference source for verified public information such as:
+
+- Courses
+- College information
+- Contact details
+- Official social-media links
+- Gallery references
+- Public college information
+
+Do not invent information.
+
+Do not expose private student or staff information.
+
+Use official college photos, logo and social-media assets only when permission is available.
+
+---
+
+1. TECHNOLOGY STACK
+
+Frontend:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide React
+- Framer Motion for subtle animations
+
+Backend:
+
+- Supabase
+- PostgreSQL
+- Supabase Auth
+- Supabase Storage
+- Row Level Security
+
+Deployment:
+
+- Vercel or Netlify
+
+---
+
+2. BRANDING
+
+Application name:
+
+GATE Digital Student Hub
+
+Subtitle:
+
+GATE Degree College, Tirupati
+
+Hero tagline:
+
+Learn. Grow. Achieve.
+
+Create a professional educational design.
+
+Visual style:
+
+- Modern
+- Premium
+- Clean
+- Academic
+- Trustworthy
+- Student-friendly
+- Mobile-first
+
+Avoid excessive animations and flashy effects.
+
+---
+
+3. MAIN NAVIGATION
+
+Desktop navbar:
+
+Home
+About
+Courses
+Student Hub
+Gallery
+Events
+Contact
+
+Student Hub dropdown:
+
+- Notices
+- Exams & Assignments
+- Study Materials
+- Placements & Jobs
+- Scholarships
+- Departments
+- Student Feedback
+- Important Links
+
+Right side of navbar:
+
+Admin Login
+
+Mobile:
+
+Use responsive hamburger navigation.
+
+---
+
+4. FLOATING PHONE + WHATSAPP BUTTONS
+
+IMPORTANT FEATURE:
+
+Add two fixed floating action buttons on the right side of the website.
+
+Position:
+
+right: 20px
+bottom: 90px
+
+On mobile:
+
+right: 15px
+bottom: 80px
+
+Buttons:
+
+Phone Button
+
+Icon:
+
+Use Lucide React "Phone".
+
+Tooltip:
+
+Call GATE Degree College
+
+Click action:
+
+tel:+919989294144
+
+Use the verified official college phone number.
+
+WhatsApp Button
+
+Icon:
+
+Use a WhatsApp-style icon.
+
+If Lucide does not provide a WhatsApp icon, use a suitable icon library or create an accessible WhatsApp icon component.
+
+Click action:
+
+https://wa.me/919989294144
+
+IMPORTANT:
+
+Do not claim that this number is an official WhatsApp number unless verified by the college.
+
+If the number is not verified for WhatsApp:
+
+- Keep the WhatsApp button disabled or
+- Make the number configurable from Admin Settings.
+
+Do NOT automatically assume every phone number supports WhatsApp.
+
+Floating buttons behavior
+
+Desktop:
+
+Show icon + tooltip on hover.
+
+Mobile:
+
+Show circular icon buttons.
+
+Add subtle hover animation.
+
+Use accessible labels:
+
+aria-label="Call GATE Degree College"
+aria-label="Contact GATE Degree College on WhatsApp"
+
+Do not block important page content.
+
+Add enough spacing between buttons.
+
+Example:
+
+                 ┌─────┐
+                 │ 📞  │
+                 └─────┘
+                 ┌─────┐
+                 │  WA │
+                 └─────┘
+
+Create reusable component:
+
+src/components/common/FloatingContactButtons.tsx
+
+---
+
+5. HOMEPAGE
+
+Create a premium homepage.
+
+Hero:
+
+GATE Degree College, Tirupati
+
+Learn. Grow. Achieve.
+
+Description:
+
+“Your digital gateway to academic information, opportunities, events and student resources.”
+
+Buttons:
+
+Explore Courses
+
+Student Hub
+
+Hero image:
+
+Use official campus image only with permission.
+
+Otherwise use a professional placeholder.
+
+---
+
+6. ABOUT
+
+Create:
+
+- About College
+- Vision
+- Mission
+- Student Development
+- Skill Development
+- Education
+- Community
+
+Only use verified information from the official website.
+
+Do not invent achievements, rankings or accreditations.
+
+---
+
+7. COURSES
+
+Display these verified course names:
+
+1. B.Com Honours – Computer Applications
+2. B.Sc Honours – Computer Science
+3. B.Sc Honours – Biotechnology
+4. BBA Honours – General
+5. BCA Honours – Artificial Intelligence
+6. BCA Honours – Data Science
+
+Course cards:
+
+- Course name
+- Short description
+- Duration
+- Learn More
+
+Do not invent eligibility, fees or curriculum.
+
+---
+
+8. STUDENT DIGITAL HUB
+
+Create a major dashboard section:
+
+Student Hub
+
+📢 College Notices
+
+🗓️ Exams & Assignments
+
+📚 Study Materials
+
+💼 Placements & Jobs
+
+🎓 Scholarships
+
+🏫 Departments
+
+💬 Student Feedback
+
+📅 Events
+
+🔗 Important Links
+
+Each feature gets its own route/page.
+
+---
+
+9. COLLEGE NOTICES
+
+Route:
+
+"/student/notices"
+
+Features:
+
+- Search
+- Categories
+- Date filter
+- Important badge
+- PDF attachment
+- Notice details
+
+Admin:
+
+- Add
+- Edit
+- Delete
+- Publish
+- Unpublish
+- Mark Important
+- Upload attachment
+
+---
+
+10. EXAMS & ASSIGNMENTS
+
+Route:
+
+"/student/exams"
+
+Features:
+
+- Department filter
+- Semester filter
+- Subject
+- Exam date
+- Start time
+- End time
+- Venue
+- Assignment deadline
+
+Never create fake examination dates.
+
+---
+
+11. STUDY MATERIALS
+
+Route:
+
+"/student/materials"
+
+Filters:
+
+- Department
+- Semester
+- Subject
+
+Features:
+
+- PDF upload
+- View
+- Download
+- Search
+
+Use Supabase Storage.
+
+---
+
+12. PLACEMENTS & JOBS
+
+Route:
+
+"/student/jobs"
+
+Display:
+
+- Company
+- Job title
+- Location
+- Eligibility
+- Deadline
+- Application link
+- Internship opportunities
+
+Only publish verified opportunities.
+
+---
+
+13. SCHOLARSHIPS
+
+Route:
+
+"/student/scholarships"
+
+Display:
+
+- Scholarship
+- Eligibility
+- Amount
+- Deadline
+- Application link
+
+Automatically visually distinguish expired scholarships.
+
+---
+
+14. DEPARTMENTS
+
+Route:
+
+"/departments"
+
+Display approved public department information.
+
+Do not expose private faculty information.
+
+---
+
+15. EVENTS
+
+Route:
+
+"/events"
+
+Display:
+
+- Upcoming events
+- Past events
+- Date
+- Time
+- Venue
+- Description
+- Image
+- Registration link
+
+Categories:
+
+- Workshops
+- Seminars
+- Cultural
+- Sports
+- Competitions
+- Awareness Programs
+- Placement Events
+
+---
+
+16. GALLERY
+
+Route:
+
+"/gallery"
+
+Create:
+
+- Responsive grid
+- Masonry layout
+- Category filters
+- Lightbox
+- Full-screen preview
+- Lazy loading
+
+Categories:
+
+- Campus
+- Workshops
+- Cultural Events
+- Sports
+- Competitions
+- Student Activities
+- Placement Events
+- Awareness Programs
+
+Use official images only with appropriate permission.
+
+---
+
+17. SOCIAL MEDIA
+
+Create:
+
+Connect With GATE
+
+Display verified official social-media accounts:
+
+- Instagram
+- Facebook
+- YouTube
+- Other verified platforms
+
+IMPORTANT:
+
+Never invent social-media URLs.
+
+Store links in Supabase so admin can update them.
+
+Each social link should open in a new tab.
+
+---
+
+18. CONTACT PAGE
+
+Route:
+
+"/contact"
+
+Use verified official contact information.
+
+Official contact information:
+
+Phone:
+
++91 99892 94144
+
+Landline:
+
+0877-2286423
+
+Email:
+
+gate.college@yahoo.com
+
+Address:
+
+6-2-86, Old Maternity Hospital Rd, Bhavani Nagar, Tirupati, Andhra Pradesh 517501
+
+Create cards:
+
+- Call
+- Email
+- Location
+
+Buttons:
+
+Call Now
+
+Email Us
+
+Get Directions
+
+Do not invent additional contact information.
+
+---
+
+19. GOOGLE MAPS
+
+Add a Google Maps section on Contact page.
+
+Use the official college address.
+
+Prefer an embedded map or configurable Google Maps URL.
+
+Do not hard-code an inaccurate location.
+
+---
+
+20. FOOTER
+
+Footer sections:
+
+GATE Digital Student Hub
+
+Short description.
+
+Quick Links
+
+Home
+About
+Courses
+Student Hub
+Gallery
+Events
+Contact
+
+Student Hub
+
+Notices
+Exams
+Materials
+Jobs
+Scholarships
+
+Connect
+
+Instagram
+Facebook
+YouTube
+
+Contact
+
+Phone
+Email
+Address
+
+Add:
+
+Student Digital Hub
+
+Clearly distinguish the portal from the official college website unless authorized.
+
+---
+
+21. ADMIN LOGIN
+
+Route:
+
+"/admin/login"
+
+Use Supabase Authentication.
+
+Admin dashboard:
+
+"/admin/dashboard"
+
+Roles:
+
+- admin
+- staff
+- student
+
+---
+
+22. ADMIN DASHBOARD
+
+Display statistics:
+
+- Total Notices
+- Total Exams
+- Total Materials
+- Total Jobs
+- Total Scholarships
+- Total Events
+- Total Gallery Images
+- Total Feedback
+
+Admin sidebar:
+
+Dashboard
+Notices
+Exams
+Materials
+Jobs
+Scholarships
+Departments
+Events
+Gallery
+Feedback
+Important Links
+Social Links
+Contact Settings
+Settings
+Logout
+
+---
+
+23. ADMIN CONTACT SETTINGS
+
+Create:
+
+"/admin/contact-settings"
+
+Admin can configure:
+
+- Official phone
+- WhatsApp-enabled phone
+- Landline
+- Email
+- Address
+- Google Maps URL
+- WhatsApp enabled/disabled
+- Phone button enabled/disabled
+
+This allows the floating contact buttons to be safely controlled.
+
+Example database settings:
+
+phone_number
+whatsapp_number
+whatsapp_enabled
+phone_enabled
+email
+address
+maps_url
+
+The floating buttons must use these settings dynamically.
+
+Do NOT hard-code the WhatsApp number in multiple components.
+
+---
+
+24. ADMIN CRUD
+
+Every content module must support:
+
+Create
+Read
+Update
+Delete
+Search
+Filter
+Pagination
+Publish
+Unpublish
+
+Delete must require confirmation.
+
+Show success/error toast messages.
+
+---
+
+25. SUPABASE DATABASE
+
+Create:
+
+profiles
+
+id
+full_name
+email
+role
+created_at
+
+notices
+
+id
+title
+description
+category
+attachment_url
+is_important
+published
+published_at
+created_at
+updated_at
+created_by
+
+exams
+
+id
+title
+department_id
+semester
+subject
+exam_date
+start_time
+end_time
+venue
+description
+created_at
+
+materials
+
+id
+title
+department_id
+semester
+subject
+description
+file_url
+created_at
+uploaded_by
+
+jobs
+
+id
+company_name
+job_title
+description
+location
+eligibility
+application_url
+deadline
+created_at
+
+scholarships
+
+id
+title
+description
+eligibility
+amount
+application_url
+deadline
+created_at
+
+departments
+
+id
+name
+code
+description
+created_at
+
+feedback
+
+id
+category
+subject
+message
+is_anonymous
+status
+admin_reply
+created_at
+
+events
+
+id
+title
+description
+event_date
+start_time
+end_time
+venue
+image_url
+registration_url
+created_at
+
+gallery
+
+id
+title
+description
+image_url
+category
+event_date
+created_at
+uploaded_by
+
+important_links
+
+id
+title
+description
+url
+category
+created_at
+
+social_links
+
+id
+platform
+title
+url
+icon
+is_active
+created_at
+
+contact_settings
+
+id
+phone_number
+phone_enabled
+whatsapp_number
+whatsapp_enabled
+landline
+email
+address
+maps_url
+updated_at
+
+---
+
+26. SUPABASE STORAGE
+
+Buckets:
+
+college-gallery
+study-materials
+notice-attachments
+event-images
+
+Only authorized admins/staff can upload.
+
+Validate:
+
+- File type
+- File size
+- File name
+
+---
+
+27. SECURITY
+
+Enable Row Level Security on all tables.
+
+Public users:
+
+- Read published content.
+
+Students:
+
+- Submit feedback.
+- Cannot read other feedback.
+
+Admin/staff:
+
+- Create
+- Update
+- Delete
+- Publish
+
+Never expose:
+
+SUPABASE_SERVICE_ROLE_KEY
+
+Frontend environment:
+
+VITE_SUPABASE_URL
+VITE_SUPABASE_ANON_KEY
+
+---
+
+28. PROJECT STRUCTURE
+
+Use:
+
+gate-digital-student-hub/
+
+public/
+
+src/
+├── assets/
+├── components/
+│   ├── layout/
+│   ├── common/
+│   │   ├── FloatingContactButtons.tsx
+│   │   ├── Loading.tsx
+│   │   ├── EmptyState.tsx
+│   │   ├── ErrorMessage.tsx
+│   │   └── ConfirmDialog.tsx
+│   ├── cards/
+│   └── admin/
+│
+├── pages/
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Courses.tsx
+│   ├── Gallery.tsx
+│   ├── Events.tsx
+│   ├── Contact.tsx
+│   ├── Notices.tsx
+│   ├── Exams.tsx
+│   ├── Materials.tsx
+│   ├── Jobs.tsx
+│   ├── Scholarships.tsx
+│   ├── Departments.tsx
+│   ├── Feedback.tsx
+│   ├── ImportantLinks.tsx
+│   ├── Login.tsx
+│   └── NotFound.tsx
+│
+├── pages/admin/
+│   ├── Dashboard.tsx
+│   ├── NoticesAdmin.tsx
+│   ├── ExamsAdmin.tsx
+│   ├── MaterialsAdmin.tsx
+│   ├── JobsAdmin.tsx
+│   ├── ScholarshipsAdmin.tsx
+│   ├── DepartmentsAdmin.tsx
+│   ├── EventsAdmin.tsx
+│   ├── GalleryAdmin.tsx
+│   ├── FeedbackAdmin.tsx
+│   ├── LinksAdmin.tsx
+│   ├── SocialLinksAdmin.tsx
+│   └── ContactSettingsAdmin.tsx
+│
+├── services/
+├── hooks/
+├── context/
+├── types/
+├── utils/
+├── App.tsx
+├── main.tsx
+└── index.css
+
+supabase/
+├── migrations/
+└── seed.sql
+
+.env.example
+README.md
+package.json
+
+---
+
+29. RESPONSIVE UI
+
+Must work perfectly on:
+
+- Android
+- iPhone
+- Tablet
+- Laptop
+- Desktop
+
+Mobile:
+
+- Hamburger menu
+- Touch-friendly controls
+- Responsive cards
+- Scrollable tables
+- Floating phone/WhatsApp buttons
+- Proper spacing
+
+Desktop:
+
+- Full navbar
+- Multi-column cards
+- Sidebar for admin
+
+---
+
+30. FLOATING BUTTON UX
+
+The floating contact component must:
+
+- Remain visible while scrolling
+- Avoid covering important buttons
+- Respect mobile safe areas
+- Have tooltips on desktop
+- Have aria labels
+- Have keyboard focus
+- Have accessible contrast
+- Use smooth but subtle hover animation
+- Never open WhatsApp unless a verified WhatsApp number is configured
+
+When clicked:
+
+Phone:
+
+tel:{phone_number}
+
+WhatsApp:
+
+https://wa.me/{whatsapp_number}
+
+Normalize WhatsApp numbers to international format.
+
+For India use:
+
+91XXXXXXXXXX
+
+Do not include "+", spaces or hyphens in the "wa.me" URL.
+
+---
+
+31. ACCESSIBILITY
+
+Implement:
+
+- Semantic HTML
+- Keyboard navigation
+- Focus states
+- ARIA labels
+- Accessible forms
+- Alt text
+- Good contrast
+
+Floating buttons must have descriptive labels.
+
+---
+
+32. PERFORMANCE
+
+Implement:
+
+- Lazy-loaded images
+- Pagination
+- Debounced search
+- Optimized Supabase queries
+- Skeleton loaders
+- Code splitting where useful
+
+---
+
+33. ERROR HANDLING
+
+Handle:
+
+- Supabase errors
+- Network errors
+- Authentication errors
+- File upload errors
+- Invalid forms
+- Missing data
+- Empty database
+
+Show friendly messages.
+
+Never expose technical secrets.
+
+---
+
+34. DATA ACCURACY
+
+Never fabricate:
+
+- Notices
+- Exam dates
+- Faculty details
+- Fees
+- Rankings
+- Accreditations
+- Placement statistics
+- Scholarship information
+- Social-media links
+- WhatsApp numbers
+
+If information is unavailable:
+
+“Information will be updated by authorized college staff.”
+
+---
+
+35. DEMO DATA
+
+Create clearly labelled demo data only.
+
+Examples:
+
+Demo Notice
+Sample Event
+Sample Study Material
+Demo Job Opportunity
+
+Do not present demo data as official college information.
+
+---
+
+36. README
+
+Create a complete README containing:
+
+- Project overview
+- Features
+- Tech stack
+- Folder structure
+- Supabase setup
+- Database setup
+- Authentication
+- Storage
+- RLS
+- Environment variables
+- Local development
+- Build
+- Deployment
+- Admin setup
+- Contact Settings setup
+- WhatsApp configuration
+- Social Media configuration
+
+---
+
+37. FINAL TESTING
+
+Before finishing:
+
+1. Run npm install
+2. Run development server
+3. Run TypeScript check
+4. Run production build
+5. Test all routes
+6. Test mobile navigation
+7. Test admin login
+8. Test protected routes
+9. Test CRUD
+10. Test Supabase connection
+11. Test image upload
+12. Test PDF upload
+13. Test Phone button
+14. Test WhatsApp button
+15. Test social-media links
+16. Test contact form
+17. Test feedback form
+18. Test responsive design
+19. Fix all console errors
+20. Fix all TypeScript errors
+
+Final result must be a premium, professional, responsive GATE Degree College student digital platform suitable for demonstrating to college management.
+
+IMPORTANT:
+
+Do not describe the application as the official GATE Degree College website unless the college management officially authorizes it.
